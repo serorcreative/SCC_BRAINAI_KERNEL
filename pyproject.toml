@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scc-brainai"
+version = "1.0.0"
+description = "Noyau officiel de BrainAI — chef d'orchestre cognitif de Seror Créative Core. Coordonne API, Runtime et Control Plane. Aucune IA obligatoire, aucun réseau, stdlib pur, déterministe."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Seror Créative" }]
+keywords = ["scc", "brainai", "kernel", "cognitive", "orchestration"]
+dependencies = []
+
+[project.scripts]
+scc-brainai = "scc_brainai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

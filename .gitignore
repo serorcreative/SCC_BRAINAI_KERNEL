@@ -1,0 +1,24 @@
+# Sorties d'exécution du noyau (jamais versionnées) ------------------------
+runs/*
+!runs/.gitkeep
+
+# Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environnements virtuels --------------------------------------------------
+.venv/
+venv/
+env/
+
+# OS -----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
